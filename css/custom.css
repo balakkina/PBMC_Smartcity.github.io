@@ -30,7 +30,9 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--scrollbarBG);
 }
 /* Scrolling End */
-
+a {
+    text-decoration: none;
+}
 #pbmcNav .nav-brand img {
     width: 4.5rem;
 }
@@ -58,6 +60,33 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     width: 149px;
     height: 89px;
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.pbmc-tabs .nav-tabs .nav-item {
+		width: 129px;
+	}
+}
+@media only screen and (max-width:767px) {
+	.pbmc-tabs .nav-tabs .nav-item {
+		width: 119px;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #pbmcNav .nav-brand img {
+        width: 3.5rem;
+    }
+	.pbmc-tabs .nav-tabs .nav-item {
+		width: 109px;
+	}
+}
+@media only screen and (max-width:767px) {
+    #pbmcNav .nav-brand img {
+        width: 3.5rem;
+    }
+	.pbmc-tabs .nav-tabs .nav-item {
+		width: 99px;
+        margin-bottom: 00.625rem;
+	}
 }
 .pbmc-tabs .nav-tabs .nav-item a {
     text-align: center;
@@ -89,4 +118,20 @@ body::-webkit-scrollbar-thumb {
 }
 .single-post-area .post-meta span img {
     width: 30px;
+}
+.text-bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+.badge-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-flex;
+    align-items: center;
+    --bs-badge-padding-x: 0.35em;
+}
+.clock-tower {
+    width: 15rem;
+}
+.card img {
+    height: 150px;
 }

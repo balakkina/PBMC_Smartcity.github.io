@@ -313,10 +313,11 @@ textarea:focus, input:focus {
 }
 .section-heading h6 {
 	text-transform: uppercase;
-	color: var(--primary-color);
 	letter-spacing: 2px;
 	display: block;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	color: #000;
+    border-left: 3px solid var(--secondary-color);
 }
 .section-heading h2 {
 	font-size: 2rem;
@@ -379,8 +380,8 @@ textarea:focus, input:focus {
 .pbmc-btn {
 	position: relative;
 	z-index: 1;
-	min-width: 150px;
-	height: 75px;
+	/* min-width: 150px; */
+	height: 66px;
 	line-height: 46px;
 	font-size: 1rem;
 	font-weight: 500;
@@ -690,15 +691,19 @@ textarea:focus, input:focus {
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.main-header-area .book-now-btn a {
 		height: 50px;
-		line-height: 50px;
-		border-radius: 30px
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
 	}
 }
 @media only screen and (max-width:767px) {
 	.main-header-area .book-now-btn a {
 		height: 50px;
-		line-height: 50px;
-		border-radius: 30px
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
 	}
 }
 .main-header-area .book-now-btn a:hover, .main-header-area .book-now-btn a:focus {
@@ -781,17 +786,17 @@ textarea:focus, input:focus {
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
 	.single-welcome-slide {
-		height: 600px
+		height: 499px
 	}
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.single-welcome-slide {
-		height: 600px
+		height: 499px
 	}
 }
 @media only screen and (max-width:767px) {
 	.single-welcome-slide {
-		height: 700px
+		height: 499px
 	}
 }
 .single-welcome-slide .welcome-text {
@@ -822,12 +827,12 @@ textarea:focus, input:focus {
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.single-welcome-slide .welcome-text h2 {
-		font-size: 42px
+		font-size: 1.5rem;
 	}
 }
 @media only screen and (max-width:767px) {
 	.single-welcome-slide .welcome-text h2 {
-		font-size: 30px
+		font-size: 1.25rem;
 	}
 }
 .footer-area {
@@ -1031,7 +1036,7 @@ textarea:focus, input:focus {
 	border-right: 1px solid rgba(255, 255, 255, .2);
 	border-left: 1px solid rgba(255, 255, 255, .2)
 }
-@media only screen and (max-width:767px) {
+/* @media only screen and (max-width:767px) {
 	.single-project-slide {
 		height: 650px
 	}
@@ -1045,7 +1050,7 @@ textarea:focus, input:focus {
 	.single-project-slide {
 		height: 650px
 	}
-}
+} */
 .single-project-slide .project-content {
 	position: absolute;
 	width: 100%;
@@ -1868,7 +1873,8 @@ textarea:focus, input:focus {
 	-webkit-transition-duration: 500ms;
 	-o-transition-duration: 500ms;
 	transition-duration: 500ms;
-	border-radius: 6px
+	border-radius: 6px;
+	height: 160.59px;
 }
 .about-us-thumbnail .single-thumb:first-child {
 	margin-bottom: 10px
@@ -1989,14 +1995,14 @@ textarea:focus, input:focus {
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.hotel-search-form-area {
-		padding-left: 0%;
-		padding-right: 0%
+		padding-left: 1%;
+		padding-right: 2%
 	}
 }
 @media only screen and (max-width:767px) {
 	.hotel-search-form-area {
-		padding-left: 0%;
-		padding-right: 0%
+		padding-left: 2%;
+		padding-right: 2%
 	}
 }
 .hotel-search-form-area .hotel-search-form {
@@ -2011,7 +2017,8 @@ textarea:focus, input:focus {
 }
 @media only screen and (max-width:767px) {
 	.hotel-search-form-area .hotel-search-form {
-		padding: 30px 30px 0 30px
+		padding: 30px 30px 0 30px;
+		border-radius: 0.625rem !important;
 	}
 }
 .hotel-search-form-area .hotel-search-form label {
@@ -2019,6 +2026,17 @@ textarea:focus, input:focus {
 	font-weight: 500;
 	color: var(--primary-color);
 	text-transform: uppercase;
+}
+@media only screen and (min-width:767px) and (max-width:1100px) {
+	.hotel-search-form-area .hotel-search-form label {
+		font-size: 0.625rem;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.hotel-search-form-area .hotel-search-form label {
+		font-size: 0.625rem;
+		white-space: nowrap;
+	}
 }
 @media only screen and (max-width:767px) {
 	.hotel-search-form-area .hotel-search-form label {
@@ -2028,13 +2046,18 @@ textarea:focus, input:focus {
 .hotel-search-form-area .hotel-search-form .form-control {
 	width: 100%;
 	margin-bottom: 0px;
-	height: 50px;
+	/* height: 50px; */
 	border: 0;
 	border-right: 1px solid #ebebeb;
     font-size: 0.825rem;
     border-radius: 0;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.hotel-search-form-area .hotel-search-form .form-control {
+		font-size: 0.625rem;
+	}
 }
 @media only screen and (max-width:767px) {
 	.hotel-search-form-area .hotel-search-form .form-control {
@@ -2209,7 +2232,7 @@ textarea:focus, input:focus {
 }
 .google-maps-contact-content .google-maps iframe {
 	width: 100%;
-	height: 500px;
+	height: 650px;
 	border: none
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
@@ -2330,7 +2353,9 @@ textarea:focus, input:focus {
 .single-recent-post .post-content .post-title {
 	font-size: 1rem;
 	display: block;
-	margin-bottom: 0
+	margin-bottom: 0;
+	color: #000;
+    text-decoration: none;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
 	.single-recent-post .post-content .post-title {
@@ -2371,7 +2396,7 @@ textarea:focus, input:focus {
 .breadcrumb-area {
 	position: relative;
 	z-index: 1;
-	height: 300px
+	height: 459px;
 }
 @media only screen and (max-width:767px) {
 	.breadcrumb-area {
